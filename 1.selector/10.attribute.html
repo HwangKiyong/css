@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset='utf-8'>
+<title>attribute</title>
+<style>
+    a[target]{
+        border: .1rem solid;
+    }
+
+    a[href='fire.html']{
+        text-decoration: none;
+    }
+
+    a[class~='best']{
+        background: yellow;
+    }
+
+    a[class|='best']{
+        border: .1rem dotted;
+    }
+
+    a[class^='best']{
+        background: lightgreen;
+    }
+
+    a[class$='best']{
+        background: pink;
+    }
+
+    a[class*='best']{
+        background: lightblue;
+    }
+</style>
+</head>
+<body>
+    <ul>
+        <li><a href='tree.html' target='_blank'>목</a></li>
+        <li><a href='fire.html'>화</a></li>
+        <li><a class='my best choice'>토</a></li>
+        <li><a class='best-choice'>금</a></li>
+        <li><a class='mybest'>수</a></li>
+    </ul>
+</body>
+</html>
+<!--(^시작) ($끝) (*글자가 포함되어있으면 모두) -->
+<!--my_best_friend 라고 쓰게되면 표기가 붙어서됨 코드에서만 띄우는법-->
